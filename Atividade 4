@@ -1,0 +1,8 @@
+senha01 = input("Crie uma senha para acessar o site: ")
+senha02 = input("Repita a senha: ")
+
+if senha01 : senha02
+print("Acesso permitido!")
+
+if senha01 != senha02:
+    print("Acesso negado!")
