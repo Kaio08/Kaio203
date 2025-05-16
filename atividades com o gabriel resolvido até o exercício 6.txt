@@ -1,0 +1,70 @@
+#PEÇA AO USUÁRIO PARA DIGITAR 5 NÚMEROS E MOSTRE A SOMA DELES NO FINAL
+
+num1=float(input("digite o 1 num"))
+num2=float(input("digite o 2 num "))
+num3=float(input("digite o 3 num "))
+num4=float(input("digite o 4 num "))
+num5=float(input("digite o 5 num"))
+
+soma=num1+num2+num3+num4+num5
+
+print("soma",soma,)
+
+
+#PEÇA AO USUÁRIO PARA DIGITAR 4 NÚMEROS E MOSTRE QUAL É O MAIS E QUAL É O MENOR
+
+#PEÇA AO USUÁRIO UMA PALAVRA E MOSTRE QUANTAS VOGAIS ELA TEM
+
+palavra = input('digite uma palavra:')
+
+vogais = ['a','e','i','o','u']
+
+contador = 0 
+
+for letra in palavra:
+    for vogal  in vogais:
+        if(letra == vogal):
+            contador += 1 
+    
+
+print(f'a quantidade de vogais na palavra {palavra} é de : {contador}')
+
+#Peça ao usuário para digitar 6 números e mostre apenas os números pares digitados.
+
+print('peça ao usuário para digitar 6 números e mostre a apenas os números pare')
+
+num1 = int(input('Digite o primeiro número: '))
+num2 = int(input('Digite o segundo número: '))
+num3 = int(input('Digite o terceiro número: '))
+num4 = int(input('Digite o quarto número: '))
+num5 = int(input('Digite o quinto número: '))
+num6 = int(input('Digite o sexto número: '))
+
+listaDePares = []
+
+listaDeNumeros = [numero1, numero2, numero3, numero4, numero5, numero6]
+
+for numero in listaDeNumeros:
+    if numero % 2 == 0:
+        listaDePares.append(numero)
+
+
+#Solicite as notas de 4 provas e mostre a média.
+
+nota1 = float(input('digite a primeira nota: '))
+nota2 = float(input('digite a segunda nota: '))
+nota3 = float(input('digite a terceira nota: '))
+nota4 = float(input('digite a quarta nota: '))
+
+media = (nota1 + nota2 + nota3 + nota4)/ 4
+         
+print(f'a media das notas {nota1}, {nota2}, {nota3}, {nota4} é: {media}')
+
+
+
+
+
+#Peça ao usuário um número e mostre a tabuada desse número de 1 a 10.
+
+numeroDigitado = int(input('digite um número para visualizar a tabuada desse número 1 a 10'))
+
