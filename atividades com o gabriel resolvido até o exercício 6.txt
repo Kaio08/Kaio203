@@ -64,7 +64,39 @@ print(f'a media das notas {nota1}, {nota2}, {nota3}, {nota4} é: {media}')
 
 
 
-#Peça ao usuário um número e mostre a tabuada desse número de 1 a 10.
+#PEÇA AO USUÁRIO UM NÚMERO E MOSTRE A TABUADA DESSE NÚMERO DE 1 A 10.
 
-numeroDigitado = int(input('digite um número para visualizar a tabuada desse número 1 a 10'))
+for numero in range(1, 11):
+   print(f"{numeroDigitado} X {numero} = {numeroDigitado * numero}")
+
+
+#PEÇA UM NÚMERO N AO USUÁRIO E MOSTRE TODOS OS NÚMEROS DE 1 ATÉ N.
+
+N = int(input("Digite um número inteiro N: "))
+
+for i in range(1, N + 1):
+    print(i)
+    
+
+#PEÇA AO USUÁRIO UMA PALAVRA E MOSTRE ELA AO CONTRÁRIO.
+
+#PEÇA UM NÚMERO AO USUÁRIO E DIGA SE ELE É MULTIPLO DE  3.
+
+if numeroDigitado % 3 == 0:
+    print(f'O número {numeroDigitado} não é multiplo de 3.')
+else:
+    print(f'O número {numeroDigitado} não é múltiplo de 3.')
+
+#PEÇA AO USUÁRIO PARA DIGITAR 3 NOMES E MOSTRE TODOS ELES EM ORDEM ALFABÉTICA.
+
+nome1 = input('Digite o 1 nome:')
+nome2 = input('Digite o 2 nome:')
+nome3 = input('Digite o 3 nome:')
+
+listeDeNomes =  [nome1, nome2, nome3]
+
+listaDeNomes.sort(reverse=False) 
+
+print(f'Os nomes em ordem alfabética são: {listaDeNomes}') 
+
 
