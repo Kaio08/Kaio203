@@ -1,0 +1,15 @@
+import requests 
+
+cep = int(input("Digite um CEP: "))
+ur1 = f'viacep.com.br/ws/{cep}/json/'
+response = requests.get(ur1)
+data = response.json()
+if response.status_code == 200:
+    estado = data['estado']
+    localidade = data['localidade']
+    uf = data['uf']
+    regiao = data ['uf']
+    print(f"O CEP {cep} corresponde ao estado: {estado}\nLocalidade: {localidade}")
+    print(f"O conteúdo em data é: {data}")
+else:
+    print("Cidade não encontrada ou erro de API.")
